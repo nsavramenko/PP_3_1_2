@@ -8,20 +8,15 @@ import javax.persistence.*;
 public class User {
 
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "surname")
     private String surname;
 
-    @Column(name = "department")
     private String department;
 
-    @Column(name = "salary")
     private Double salary;
 
     public User() {
